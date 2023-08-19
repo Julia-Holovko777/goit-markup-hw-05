@@ -474,7 +474,7 @@ button {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   font-size: 12px;
   font-weight: 400;
-  line-height: 2; /* 200% */
+  line-height: 1.5; /* 200% */
   letter-spacing: 0.04em;
 }
 .footer-form-imput::placeholder {
@@ -482,7 +482,7 @@ button {
 }
 
 .footer-btn {
-  width: 165px;
+  min-width: 165px;
   height: 40px;
   display: flex;
   justify-content: center;
@@ -507,7 +507,9 @@ button {
 .footer-btn:focus {
   background-color: var(--ocean);
 }
-
+.footer-form-icon {
+  margin-left: 16px;
+}
 /* Modal window*/
 .backdrop {
   position: fixed;
@@ -579,7 +581,18 @@ button {
   margin-bottom: 16px;
 }
 /* Modal form */
+input {
+  font-family: inherit;
+}
+textarea {
+  font-family: inherit;
+}
 
+.modal-form {
+}
+.modal-form-container {
+  margin-bottom: 8px;
+}
 .modal-form-label {
   display: block;
   margin-bottom: 4px;
@@ -591,10 +604,6 @@ button {
 
 .modal-form-field {
   position: relative;
-  margin-bottom: 8px;
-}
-.modal-form-container {
-  margin-bottom: 16px;
 }
 
 .modal-form-input {
@@ -624,6 +633,9 @@ button {
 }
 .modal-form-input:focus + .modal-form-icon {
   fill: var(--iris);
+}
+.modal-form-comment {
+  margin-bottom: 16px;
 }
 .modal-form-textarea {
   width: 100%;
